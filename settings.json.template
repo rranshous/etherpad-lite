@@ -35,11 +35,13 @@
 
   //The Type of the database. You can choose between dirty, postgres, sqlite and mysql
   //You shouldn't use "dirty" for for anything else than testing or development
-  "dbType" : "dirty",
+  "dbType" : "postgres",
   //the database specific settings
+  /*
   "dbSettings" : {
                    "filename" : "var/dirty.db"
                  },
+  */
 
   /* An Example of MySQL Configuration
    "dbType" : "mysql",
@@ -119,7 +121,6 @@
 
   /* Users for basic authentication. is_admin = true gives access to /admin.
      If you do not uncomment this, /admin will not be available! */
-  /*
   "users": {
     "admin": {
       "password": "changeme1",
@@ -130,7 +131,6 @@
       "is_admin": false
     }
   },
-  */
 
   // restrict socket.io transport methods
   "socketTransportProtocols" : ["xhr-polling", "jsonp-polling", "htmlfile"],
